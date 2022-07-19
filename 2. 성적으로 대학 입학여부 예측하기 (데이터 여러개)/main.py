@@ -14,6 +14,7 @@ for i, rows in data.iterrows():
 model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(128, activation='sigmoid'),
     tf.keras.layers.Dense(256, activation='sigmoid'),
+    tf.keras.layers.Dense(512, activation='sigmoid'),
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])
 
